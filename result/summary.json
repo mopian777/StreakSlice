@@ -1,0 +1,12 @@
+{
+  "status": "completed_fixed1100_umi_sequence",
+  "actual_child_exit_code": 0,
+  "failure": null,
+  "wait_observation_errors": [],
+  "maximum_dispatches": 1100,
+  "maximum_concurrency": 10,
+  "automatic_retry": false,
+  "automatic_resume": false,
+  "B_started": false,
+  "C_started": false
+}

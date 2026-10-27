@@ -1,0 +1,38 @@
+{
+  "D:\\1\\Codex\\Codex\\2026-08-20\\w\\outputs\\fair_training_ablation_20261012\\actor_adam_reset_pilot_20261015\\run_001\\models\\original_tail_q\\m02_s0\\checkpoint_11.pt": {
+    "bytes": 1062352,
+    "mtime_ns": 1792091492225322000
+  },
+  "D:\\1\\Codex\\Codex\\2026-08-20\\w\\outputs\\fair_training_ablation_20261012\\actor_adam_reset_pilot_20261015\\run_001\\models\\original_tail_q\\m02_s1\\checkpoint_11.pt": {
+    "bytes": 1062352,
+    "mtime_ns": 1792091508554421300
+  },
+  "D:\\1\\Codex\\Codex\\2026-08-20\\w\\outputs\\fair_training_ablation_20261012\\actor_adam_reset_pilot_20261015\\run_001\\models\\original_tail_q\\m02_s2\\checkpoint_11.pt": {
+    "bytes": 1062352,
+    "mtime_ns": 1792091524909558500
+  },
+  "D:\\1\\Codex\\Codex\\2026-08-20\\w\\outputs\\fair_training_ablation_20261012\\actor_adam_reset_pilot_20261015\\run_001\\models\\trajectory_ru\\m02_s0\\checkpoint_11.pt": {
+    "bytes": 1062352,
+    "mtime_ns": 1792091500342613600
+  },
+  "D:\\1\\Codex\\Codex\\2026-08-20\\w\\outputs\\fair_training_ablation_20261012\\actor_adam_reset_pilot_20261015\\run_001\\models\\trajectory_ru\\m02_s1\\checkpoint_11.pt": {
+    "bytes": 1062352,
+    "mtime_ns": 1792091516573716200
+  },
+  "D:\\1\\Codex\\Codex\\2026-08-20\\w\\outputs\\fair_training_ablation_20261012\\actor_adam_reset_pilot_20261015\\run_001\\models\\trajectory_ru\\m02_s2\\checkpoint_11.pt": {
+    "bytes": 1062352,
+    "mtime_ns": 1792091532991685300
+  },
+  "D:\\1\\Codex\\Codex\\2026-08-20\\w\\outputs\\fair_training_ablation_20261012\\cp11_main_comparison_20261017\\run_001\\models\\dirppo_matched\\m03_s0\\checkpoint_11.pt": {
+    "bytes": 296272,
+    "mtime_ns": 1792276554318297500
+  },
+  "D:\\1\\Codex\\Codex\\2026-08-20\\w\\outputs\\fair_training_ablation_20261012\\cp11_main_comparison_20261017\\run_001\\models\\dirppo_matched\\m03_s1\\checkpoint_11.pt": {
+    "bytes": 296272,
+    "mtime_ns": 1792276565882736400
+  },
+  "D:\\1\\Codex\\Codex\\2026-08-20\\w\\outputs\\fair_training_ablation_20261012\\cp11_main_comparison_20261017\\run_001\\models\\dirppo_matched\\m03_s2\\checkpoint_11.pt": {
+    "bytes": 296272,
+    "mtime_ns": 1792276578349117100
+  }
+}
