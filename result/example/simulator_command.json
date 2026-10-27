@@ -1,0 +1,26 @@
+{
+  "command": [
+    "wsl",
+    "-d",
+    "Ubuntu-22.04",
+    "--",
+    "/mnt/d/1/Codex/Codex/2026-08-20/w/outputs/fair_training_ablation_20261012/umi_compliant_fixed1100_20261019/build_001/deadline_sim",
+    "--shareMode=external",
+    "--outputDir=/mnt/d/1/Codex/Codex/2026-08-20/w/outputs/fair_training_ablation_20261012/umi_compliant_fixed1100_20261019/run_001/episodes/j0000/episode/raw",
+    "--bridgeDir=/mnt/d/1/Codex/Codex/2026-08-20/w/outputs/fair_training_ablation_20261012/umi_compliant_fixed1100_20261019/run_001/episodes/j0000/episode/raw/bridge_categorical-evaluation-categorical-qr-cvar-s823200",
+    "--simTag=categorical-evaluation-categorical-qr-cvar-s823200",
+    "--rngRun=823200",
+    "--simTime=40s",
+    "--bandwidth=2500000",
+    "--lowLatRatePps=800",
+    "--voiceRatePps=563",
+    "--mmtcRatePps=191",
+    "--stressEvents=nominal",
+    "--replaySchedule=/mnt/d/1/Codex/Codex/2026-08-20/w/outputs/fair_training_ablation_20261012/umi_compliant_fixed1100_20261019/run_001/episodes/j0000/episode/inputs/823200.csv",
+    "--rlcCapUrllcBytes=50000",
+    "--rlcCapEmbbBytes=375000",
+    "--rlcCapMmtcBytes=62500",
+    "--telemetryV2=1"
+  ],
+  "simulator": "D:\\1\\Codex\\Codex\\2026-08-20\\w\\outputs\\fair_training_ablation_20261012\\umi_compliant_fixed1100_20261019\\build_001\\deadline_sim"
+}

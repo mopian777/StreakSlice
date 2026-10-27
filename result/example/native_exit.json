@@ -1,0 +1,13 @@
+{
+  "processes": [
+    {
+      "pid": 22964,
+      "actual_exit_code": 0
+    }
+  ],
+  "all_exited": true,
+  "simulation_dispatches": 1,
+  "worker_exit_code": 0,
+  "process_receipt_scope": "Actual Windows WSL client exit codes, never inferred from PID disappearance",
+  "linux_exit_status": "normal_command_return_0"
+}
