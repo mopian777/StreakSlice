@@ -1,0 +1,383 @@
+{
+  "started_utc": "2026-10-19T12:39:58.959082+00:00",
+  "steps": [
+    {
+      "name": "umi_source_regression",
+      "command": [
+        "C:\\Users\\xzh31\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "D:\\1\\Codex\\Codex\\2026-08-20\\w\\outputs\\fair_training_ablation_20261012\\umi_compliant_fixed1100_20261019\\build_001",
+        "-p",
+        "test_umi_source.py",
+        "-v"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.09399999998277053,
+      "log": "D:\\1\\Codex\\Codex\\2026-08-20\\w\\outputs\\fair_training_ablation_20261012\\umi_compliant_fixed1100_20261019\\build_001\\no_sim_attempt_002\\umi_source_regression.log"
+    },
+    {
+      "name": "compile_simulator",
+      "command": [
+        "wsl",
+        "-d",
+        "Ubuntu-22.04",
+        "--cd",
+        "/mnt/d/1/Codex/Codex/2026-08-20/w/work/burstshield_ns3/randomized_20260927",
+        "--",
+        "env",
+        "TMPDIR=/mnt/d/1/Codex/Codex/2026-08-20/w/outputs/fair_training_ablation_20261012/umi_compliant_fixed1100_20261019/build_001/compiler_tmp",
+        "g++",
+        "-std=c++20",
+        "-O2",
+        "-DNS3_ASSERT_ENABLE",
+        "-DNS3_LOG_ENABLE",
+        "-I/home/zihang/ns3-work/ns-3-dev/build/include",
+        "-I/mnt/d/1/Codex/Codex/2026-08-20/w/outputs/fair_training_ablation_20261012/umi_compliant_fixed1100_20261019/build_001",
+        "/mnt/d/1/Codex/Codex/2026-08-20/w/outputs/fair_training_ablation_20261012/umi_compliant_fixed1100_20261019/build_001/deadline_sim.cc",
+        "-o",
+        "/mnt/d/1/Codex/Codex/2026-08-20/w/outputs/fair_training_ablation_20261012/umi_compliant_fixed1100_20261019/build_001/deadline_sim",
+        "-Wl,--disable-new-dtags,-rpath,/mnt/d/1/Codex/Codex/2026-08-20/w/work/burstshield_ns3/randomized_20260927/revision_design_20260928/deadline_budget_20260929/build_v2:/home/zihang/ns3-work/ns-3-dev/build/lib",
+        "-Wl,--no-as-needed",
+        "/home/zihang/ns3-work/ns-3-dev/build/lib/libns3.42-antenna-default.so",
+        "/home/zihang/ns3-work/ns-3-dev/build/lib/libns3.42-aodv-default.so",
+        "/home/zihang/ns3-work/ns-3-dev/build/lib/libns3.42-applications-default.so",
+        "/home/zihang/ns3-work/ns-3-dev/build/lib/libns3.42-bridge-default.so",
+        "/home/zihang/ns3-work/ns-3-dev/build/lib/libns3.42-buildings-default.so",
+        "/home/zihang/ns3-work/ns-3-dev/build/lib/libns3.42-config-store-default.so",
+        "/home/zihang/ns3-work/ns-3-dev/build/lib/libns3.42-core-default.so",
+        "/home/zihang/ns3-work/ns-3-dev/build/lib/libns3.42-csma-default.so",
+        "/home/zihang/ns3-work/ns-3-dev/build/lib/libns3.42-csma-layout-default.so",
+        "/home/zihang/ns3-work/ns-3-dev/build/lib/libns3.42-dsdv-default.so",
+        "/home/zihang/ns3-work/ns-3-dev/build/lib/libns3.42-dsr-default.so",
+        "/home/zihang/ns3-work/ns-3-dev/build/lib/libns3.42-energy-default.so",
+        "/home/zihang/ns3-work/ns-3-dev/build/lib/libns3.42-fd-net-device-default.so",
+        "/home/zihang/ns3-work/ns-3-dev/build/lib/libns3.42-flow-monitor-default.so",
+        "/home/zihang/ns3-work/ns-3-dev/build/lib/libns3.42-internet-apps-default.so",
+        "/home/zihang/ns3-work/ns-3-dev/build/lib/libns3.42-internet-default.so",
+        "/home/zihang/ns3-work/ns-3-dev/build/lib/libns3.42-lr-wpan-default.so",
+        "/home/zihang/ns3-work/ns-3-dev/build/lib/libns3.42-lte-default.so",
+        "/home/zihang/ns3-work/ns-3-dev/build/lib/libns3.42-mesh-default.so",
+        "/home/zihang/ns3-work/ns-3-dev/build/lib/libns3.42-mobility-default.so",
+        "/home/zihang/ns3-work/ns-3-dev/build/lib/libns3.42-netanim-default.so",
+        "/home/zihang/ns3-work/ns-3-dev/build/lib/libns3.42-network-default.so",
+        "/home/zihang/ns3-work/ns-3-dev/build/lib/libns3.42-nix-vector-routing-default.so",
+        "/mnt/d/1/Codex/Codex/2026-08-20/w/work/burstshield_ns3/randomized_20260927/revision_design_20260928/deadline_budget_20260929/build_v2/libns3.42-nr-default.so",
+        "/home/zihang/ns3-work/ns-3-dev/build/lib/libns3.42-olsr-default.so",
+        "/home/zihang/ns3-work/ns-3-dev/build/lib/libns3.42-point-to-point-default.so",
+        "/home/zihang/ns3-work/ns-3-dev/build/lib/libns3.42-point-to-point-layout-default.so",
+        "/home/zihang/ns3-work/ns-3-dev/build/lib/libns3.42-propagation-default.so",
+        "/home/zihang/ns3-work/ns-3-dev/build/lib/libns3.42-sixlowpan-default.so",
+        "/home/zihang/ns3-work/ns-3-dev/build/lib/libns3.42-spectrum-default.so",
+        "/home/zihang/ns3-work/ns-3-dev/build/lib/libns3.42-stats-default.so",
+        "/home/zihang/ns3-work/ns-3-dev/build/lib/libns3.42-tap-bridge-default.so",
+        "/home/zihang/ns3-work/ns-3-dev/build/lib/libns3.42-topology-read-default.so",
+        "/home/zihang/ns3-work/ns-3-dev/build/lib/libns3.42-traffic-control-default.so",
+        "/home/zihang/ns3-work/ns-3-dev/build/lib/libns3.42-uan-default.so",
+        "/home/zihang/ns3-work/ns-3-dev/build/lib/libns3.42-virtual-net-device-default.so",
+        "/home/zihang/ns3-work/ns-3-dev/build/lib/libns3.42-wifi-default.so",
+        "/home/zihang/ns3-work/ns-3-dev/build/lib/libns3.42-wimax-default.so",
+        "-Wl,--as-needed",
+        "-pthread"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 11.562000000034459,
+      "log": "D:\\1\\Codex\\Codex\\2026-08-20\\w\\outputs\\fair_training_ablation_20261012\\umi_compliant_fixed1100_20261019\\build_001\\no_sim_attempt_002\\compile_simulator.log"
+    },
+    {
+      "name": "compile_cohort_unit",
+      "command": [
+        "wsl",
+        "-d",
+        "Ubuntu-22.04",
+        "--cd",
+        "/mnt/d/1/Codex/Codex/2026-08-20/w/work/burstshield_ns3/randomized_20260927",
+        "--",
+        "env",
+        "TMPDIR=/mnt/d/1/Codex/Codex/2026-08-20/w/outputs/fair_training_ablation_20261012/umi_compliant_fixed1100_20261019/build_001/compiler_tmp",
+        "g++",
+        "-std=c++20",
+        "-O2",
+        "-Wall",
+        "-Wextra",
+        "-I/mnt/d/1/Codex/Codex/2026-08-20/w/outputs/fair_training_ablation_20261012/umi_compliant_fixed1100_20261019/build_001",
+        "/mnt/d/1/Codex/Codex/2026-08-20/w/outputs/fair_training_ablation_20261012/umi_compliant_fixed1100_20261019/build_001/test_cohort_compliance.cc",
+        "-o",
+        "/mnt/d/1/Codex/Codex/2026-08-20/w/outputs/fair_training_ablation_20261012/umi_compliant_fixed1100_20261019/build_001/test_cohort_compliance"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.6099999999860302,
+      "log": "D:\\1\\Codex\\Codex\\2026-08-20\\w\\outputs\\fair_training_ablation_20261012\\umi_compliant_fixed1100_20261019\\build_001\\no_sim_attempt_002\\compile_cohort_unit.log"
+    },
+    {
+      "name": "cohort_unit",
+      "command": [
+        "wsl",
+        "-d",
+        "Ubuntu-22.04",
+        "--cd",
+        "/mnt/d/1/Codex/Codex/2026-08-20/w/work/burstshield_ns3/randomized_20260927",
+        "--",
+        "/mnt/d/1/Codex/Codex/2026-08-20/w/outputs/fair_training_ablation_20261012/umi_compliant_fixed1100_20261019/build_001/test_cohort_compliance"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.0779999999795109,
+      "log": "D:\\1\\Codex\\Codex\\2026-08-20\\w\\outputs\\fair_training_ablation_20261012\\umi_compliant_fixed1100_20261019\\build_001\\no_sim_attempt_002\\cohort_unit.log"
+    },
+    {
+      "name": "compile_umi_geometry",
+      "command": [
+        "wsl",
+        "-d",
+        "Ubuntu-22.04",
+        "--cd",
+        "/mnt/d/1/Codex/Codex/2026-08-20/w/work/burstshield_ns3/randomized_20260927",
+        "--",
+        "env",
+        "TMPDIR=/mnt/d/1/Codex/Codex/2026-08-20/w/outputs/fair_training_ablation_20261012/umi_compliant_fixed1100_20261019/build_001/compiler_tmp",
+        "g++",
+        "-std=c++20",
+        "-O2",
+        "-DNS3_ASSERT_ENABLE",
+        "-DNS3_LOG_ENABLE",
+        "-I/home/zihang/ns3-work/ns-3-dev/build/include",
+        "-I/mnt/d/1/Codex/Codex/2026-08-20/w/outputs/fair_training_ablation_20261012/umi_compliant_fixed1100_20261019/build_001",
+        "/mnt/d/1/Codex/Codex/2026-08-20/w/outputs/fair_training_ablation_20261012/umi_compliant_fixed1100_20261019/build_001/test_umi_geometry.cc",
+        "-o",
+        "/mnt/d/1/Codex/Codex/2026-08-20/w/outputs/fair_training_ablation_20261012/umi_compliant_fixed1100_20261019/build_001/test_umi_geometry",
+        "-Wl,--disable-new-dtags,-rpath,/mnt/d/1/Codex/Codex/2026-08-20/w/work/burstshield_ns3/randomized_20260927/revision_design_20260928/deadline_budget_20260929/build_v2:/home/zihang/ns3-work/ns-3-dev/build/lib",
+        "-Wl,--no-as-needed",
+        "/home/zihang/ns3-work/ns-3-dev/build/lib/libns3.42-antenna-default.so",
+        "/home/zihang/ns3-work/ns-3-dev/build/lib/libns3.42-aodv-default.so",
+        "/home/zihang/ns3-work/ns-3-dev/build/lib/libns3.42-applications-default.so",
+        "/home/zihang/ns3-work/ns-3-dev/build/lib/libns3.42-bridge-default.so",
+        "/home/zihang/ns3-work/ns-3-dev/build/lib/libns3.42-buildings-default.so",
+        "/home/zihang/ns3-work/ns-3-dev/build/lib/libns3.42-config-store-default.so",
+        "/home/zihang/ns3-work/ns-3-dev/build/lib/libns3.42-core-default.so",
+        "/home/zihang/ns3-work/ns-3-dev/build/lib/libns3.42-csma-default.so",
+        "/home/zihang/ns3-work/ns-3-dev/build/lib/libns3.42-csma-layout-default.so",
+        "/home/zihang/ns3-work/ns-3-dev/build/lib/libns3.42-dsdv-default.so",
+        "/home/zihang/ns3-work/ns-3-dev/build/lib/libns3.42-dsr-default.so",
+        "/home/zihang/ns3-work/ns-3-dev/build/lib/libns3.42-energy-default.so",
+        "/home/zihang/ns3-work/ns-3-dev/build/lib/libns3.42-fd-net-device-default.so",
+        "/home/zihang/ns3-work/ns-3-dev/build/lib/libns3.42-flow-monitor-default.so",
+        "/home/zihang/ns3-work/ns-3-dev/build/lib/libns3.42-internet-apps-default.so",
+        "/home/zihang/ns3-work/ns-3-dev/build/lib/libns3.42-internet-default.so",
+        "/home/zihang/ns3-work/ns-3-dev/build/lib/libns3.42-lr-wpan-default.so",
+        "/home/zihang/ns3-work/ns-3-dev/build/lib/libns3.42-lte-default.so",
+        "/home/zihang/ns3-work/ns-3-dev/build/lib/libns3.42-mesh-default.so",
+        "/home/zihang/ns3-work/ns-3-dev/build/lib/libns3.42-mobility-default.so",
+        "/home/zihang/ns3-work/ns-3-dev/build/lib/libns3.42-netanim-default.so",
+        "/home/zihang/ns3-work/ns-3-dev/build/lib/libns3.42-network-default.so",
+        "/home/zihang/ns3-work/ns-3-dev/build/lib/libns3.42-nix-vector-routing-default.so",
+        "/mnt/d/1/Codex/Codex/2026-08-20/w/work/burstshield_ns3/randomized_20260927/revision_design_20260928/deadline_budget_20260929/build_v2/libns3.42-nr-default.so",
+        "/home/zihang/ns3-work/ns-3-dev/build/lib/libns3.42-olsr-default.so",
+        "/home/zihang/ns3-work/ns-3-dev/build/lib/libns3.42-point-to-point-default.so",
+        "/home/zihang/ns3-work/ns-3-dev/build/lib/libns3.42-point-to-point-layout-default.so",
+        "/home/zihang/ns3-work/ns-3-dev/build/lib/libns3.42-propagation-default.so",
+        "/home/zihang/ns3-work/ns-3-dev/build/lib/libns3.42-sixlowpan-default.so",
+        "/home/zihang/ns3-work/ns-3-dev/build/lib/libns3.42-spectrum-default.so",
+        "/home/zihang/ns3-work/ns-3-dev/build/lib/libns3.42-stats-default.so",
+        "/home/zihang/ns3-work/ns-3-dev/build/lib/libns3.42-tap-bridge-default.so",
+        "/home/zihang/ns3-work/ns-3-dev/build/lib/libns3.42-topology-read-default.so",
+        "/home/zihang/ns3-work/ns-3-dev/build/lib/libns3.42-traffic-control-default.so",
+        "/home/zihang/ns3-work/ns-3-dev/build/lib/libns3.42-uan-default.so",
+        "/home/zihang/ns3-work/ns-3-dev/build/lib/libns3.42-virtual-net-device-default.so",
+        "/home/zihang/ns3-work/ns-3-dev/build/lib/libns3.42-wifi-default.so",
+        "/home/zihang/ns3-work/ns-3-dev/build/lib/libns3.42-wimax-default.so",
+        "-Wl,--as-needed",
+        "-pthread"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 3.75,
+      "log": "D:\\1\\Codex\\Codex\\2026-08-20\\w\\outputs\\fair_training_ablation_20261012\\umi_compliant_fixed1100_20261019\\build_001\\no_sim_attempt_002\\compile_umi_geometry.log"
+    },
+    {
+      "name": "umi_geometry_unit",
+      "command": [
+        "wsl",
+        "-d",
+        "Ubuntu-22.04",
+        "--cd",
+        "/mnt/d/1/Codex/Codex/2026-08-20/w/work/burstshield_ns3/randomized_20260927",
+        "--",
+        "/mnt/d/1/Codex/Codex/2026-08-20/w/outputs/fair_training_ablation_20261012/umi_compliant_fixed1100_20261019/build_001/test_umi_geometry"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.21799999999348074,
+      "log": "D:\\1\\Codex\\Codex\\2026-08-20\\w\\outputs\\fair_training_ablation_20261012\\umi_compliant_fixed1100_20261019\\build_001\\no_sim_attempt_002\\umi_geometry_unit.log"
+    },
+    {
+      "name": "original_cohort_source_regression",
+      "command": [
+        "C:\\Users\\xzh31\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "D:\\1\\Codex\\Codex\\2026-08-20\\w\\work\\burstshield_ns3\\randomized_20260927\\revision_design_20260928\\deadline_budget_20260929",
+        "-p",
+        "test_cohort_compliance_source.py",
+        "-v"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.14100000000325963,
+      "log": "D:\\1\\Codex\\Codex\\2026-08-20\\w\\outputs\\fair_training_ablation_20261012\\umi_compliant_fixed1100_20261019\\build_001\\no_sim_attempt_002\\original_cohort_source_regression.log"
+    },
+    {
+      "name": "help_no_sim",
+      "command": [
+        "wsl",
+        "-d",
+        "Ubuntu-22.04",
+        "--cd",
+        "/mnt/d/1/Codex/Codex/2026-08-20/w/work/burstshield_ns3/randomized_20260927",
+        "--",
+        "env",
+        "-u",
+        "NS_COMMANDLINE_INTROSPECTION",
+        "/mnt/d/1/Codex/Codex/2026-08-20/w/outputs/fair_training_ablation_20261012/umi_compliant_fixed1100_20261019/build_001/deadline_sim",
+        "--PrintHelp"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.18800000002374873,
+      "log": "D:\\1\\Codex\\Codex\\2026-08-20\\w\\outputs\\fair_training_ablation_20261012\\umi_compliant_fixed1100_20261019\\build_001\\no_sim_attempt_002\\help_no_sim.log"
+    },
+    {
+      "name": "v4_self_test_no_sim",
+      "command": [
+        "wsl",
+        "-d",
+        "Ubuntu-22.04",
+        "--cd",
+        "/mnt/d/1/Codex/Codex/2026-08-20/w/work/burstshield_ns3/randomized_20260927",
+        "--",
+        "env",
+        "-u",
+        "NS_COMMANDLINE_INTROSPECTION",
+        "/mnt/d/1/Codex/Codex/2026-08-20/w/outputs/fair_training_ablation_20261012/umi_compliant_fixed1100_20261019/build_001/deadline_sim",
+        "--v4-self-test"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.15600000001722947,
+      "log": "D:\\1\\Codex\\Codex\\2026-08-20\\w\\outputs\\fair_training_ablation_20261012\\umi_compliant_fixed1100_20261019\\build_001\\no_sim_attempt_002\\v4_self_test_no_sim.log"
+    },
+    {
+      "name": "elf_type",
+      "command": [
+        "wsl",
+        "-d",
+        "Ubuntu-22.04",
+        "--cd",
+        "/mnt/d/1/Codex/Codex/2026-08-20/w/work/burstshield_ns3/randomized_20260927",
+        "--",
+        "file",
+        "/mnt/d/1/Codex/Codex/2026-08-20/w/outputs/fair_training_ablation_20261012/umi_compliant_fixed1100_20261019/build_001/deadline_sim"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.061999999976251274,
+      "log": "D:\\1\\Codex\\Codex\\2026-08-20\\w\\outputs\\fair_training_ablation_20261012\\umi_compliant_fixed1100_20261019\\build_001\\no_sim_attempt_002\\elf_type.log"
+    },
+    {
+      "name": "elf_dynamic",
+      "command": [
+        "wsl",
+        "-d",
+        "Ubuntu-22.04",
+        "--cd",
+        "/mnt/d/1/Codex/Codex/2026-08-20/w/work/burstshield_ns3/randomized_20260927",
+        "--",
+        "readelf",
+        "-d",
+        "/mnt/d/1/Codex/Codex/2026-08-20/w/outputs/fair_training_ablation_20261012/umi_compliant_fixed1100_20261019/build_001/deadline_sim"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.0779999999795109,
+      "log": "D:\\1\\Codex\\Codex\\2026-08-20\\w\\outputs\\fair_training_ablation_20261012\\umi_compliant_fixed1100_20261019\\build_001\\no_sim_attempt_002\\elf_dynamic.log"
+    },
+    {
+      "name": "dynamic_relocations",
+      "command": [
+        "wsl",
+        "-d",
+        "Ubuntu-22.04",
+        "--cd",
+        "/mnt/d/1/Codex/Codex/2026-08-20/w/work/burstshield_ns3/randomized_20260927",
+        "--",
+        "ldd",
+        "-r",
+        "/mnt/d/1/Codex/Codex/2026-08-20/w/outputs/fair_training_ablation_20261012/umi_compliant_fixed1100_20261019/build_001/deadline_sim"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.14100000000325963,
+      "log": "D:\\1\\Codex\\Codex\\2026-08-20\\w\\outputs\\fair_training_ablation_20261012\\umi_compliant_fixed1100_20261019\\build_001\\no_sim_attempt_002\\dynamic_relocations.log"
+    }
+  ],
+  "simulations": 0,
+  "training_updates": 0,
+  "workers_started": 0,
+  "shared_libraries_rebuilt": false,
+  "B_started": false,
+  "C_started": false,
+  "old_files_before": {
+    "D:\\1\\Codex\\Codex\\2026-08-20\\w\\outputs\\simulator_cohort_fix_20261016\\build_001\\deadline_sim": [
+      569952,
+      1792166538127439400
+    ],
+    "D:\\1\\Codex\\Codex\\2026-08-20\\w\\outputs\\simulator_cohort_fix_20261016\\build_001\\deadline_sim.cc": [
+      99827,
+      1792166522244136900
+    ],
+    "D:\\1\\Codex\\Codex\\2026-08-20\\w\\outputs\\simulator_cohort_fix_20261016\\build_001\\v4_telemetry.h": [
+      9987,
+      1792166522245134600
+    ],
+    "D:\\1\\Codex\\Codex\\2026-08-20\\w\\outputs\\simulator_cohort_fix_20261016\\build_001\\cohort_compliance.h": [
+      1605,
+      1792166522245134600
+    ],
+    "D:\\1\\Codex\\Codex\\2026-08-20\\w\\outputs\\simulator_cohort_fix_20261016\\build_001\\deadline_hooks.h": [
+      989,
+      1792166522245134600
+    ],
+    "D:\\1\\Codex\\Codex\\2026-08-20\\w\\work\\burstshield_ns3\\randomized_20260927\\revision_design_20260928\\deadline_budget_20260929\\build_v2\\libns3.42-nr-default.so": [
+      107553936,
+      1790692195268714900
+    ]
+  },
+  "old_files_after": {
+    "D:\\1\\Codex\\Codex\\2026-08-20\\w\\outputs\\simulator_cohort_fix_20261016\\build_001\\deadline_sim": [
+      569952,
+      1792166538127439400
+    ],
+    "D:\\1\\Codex\\Codex\\2026-08-20\\w\\outputs\\simulator_cohort_fix_20261016\\build_001\\deadline_sim.cc": [
+      99827,
+      1792166522244136900
+    ],
+    "D:\\1\\Codex\\Codex\\2026-08-20\\w\\outputs\\simulator_cohort_fix_20261016\\build_001\\v4_telemetry.h": [
+      9987,
+      1792166522245134600
+    ],
+    "D:\\1\\Codex\\Codex\\2026-08-20\\w\\outputs\\simulator_cohort_fix_20261016\\build_001\\cohort_compliance.h": [
+      1605,
+      1792166522245134600
+    ],
+    "D:\\1\\Codex\\Codex\\2026-08-20\\w\\outputs\\simulator_cohort_fix_20261016\\build_001\\deadline_hooks.h": [
+      989,
+      1792166522245134600
+    ],
+    "D:\\1\\Codex\\Codex\\2026-08-20\\w\\work\\burstshield_ns3\\randomized_20260927\\revision_design_20260928\\deadline_budget_20260929\\build_v2\\libns3.42-nr-default.so": [
+      107553936,
+      1790692195268714900
+    ]
+  },
+  "old_size_and_mtime_unchanged": true,
+  "binary": "D:\\1\\Codex\\Codex\\2026-08-20\\w\\outputs\\fair_training_ablation_20261012\\umi_compliant_fixed1100_20261019\\build_001\\deadline_sim",
+  "binary_bytes": 575096,
+  "status": "compiled_and_no_simulation_checks_passed",
+  "finished_utc": "2026-10-19T12:40:16.052058+00:00"
+}
